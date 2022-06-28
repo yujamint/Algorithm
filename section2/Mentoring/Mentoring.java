@@ -1,4 +1,4 @@
-package section2;
+package section2.Mentoring;
 
 import java.util.Scanner;
 
