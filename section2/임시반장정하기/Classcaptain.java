@@ -1,4 +1,4 @@
-package section2;
+package section2.임시반장정하기;
 
 import java.util.Scanner;
 
