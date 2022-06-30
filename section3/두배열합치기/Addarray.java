@@ -1,17 +1,24 @@
 package section3.두배열합치기;
 
 import java.util.ArrayList;
-import java.util.Collections;
+//import java.util.Collections; 첫 번쨰 풀이에 사용
 import java.util.Scanner;
 
 public class Addarray {
     public ArrayList<Integer> solution(int n, int[] arr1, int m, int[] arr2){
         ArrayList<Integer> answer = new ArrayList<Integer>(n+m);
-        for (int i : arr1)
-            answer.add(i);
-        for (int i : arr2)
-            answer.add(i);
-        Collections.sort(answer);
+        int pa = 0, pb = 0;
+        while(pa<n && pb<m){
+            if(arr1[pa] < arr2[pb]) answer.add(arr1[pa++]);
+            else answer.add(arr2[pb++]);
+        }
+        if(pa==n)
+            for(int i=pb; i<m; i++)
+                answer.add(arr2[i]);
+        else
+            for(int i=pa; i<n; i++)
+                answer.add(arr1[i]);
+
         return answer;
     }
 

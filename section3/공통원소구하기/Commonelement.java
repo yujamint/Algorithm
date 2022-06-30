@@ -1,25 +1,24 @@
 package section3.공통원소구하기;
 
 import java.util.ArrayList;
-import java.util.Collections;
+// import java.util.Collections; 첫 번쨰 풀이 사용
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Commonelement {
     public ArrayList<Integer> solution(int n, int[] arr1, int m, int[] arr2){
         ArrayList<Integer> answer = new ArrayList<Integer>();
-        ArrayList<Integer> temp = new ArrayList<Integer>();
-        for (int i : arr1)
-            temp.add(i);
-        for (int i : arr2)
-            temp.add(i);
-        for(int i=0; i<temp.size(); i++){
-            for(int j=i+1; j<temp.size(); j++){
-                if(temp.get(j).equals(temp.get(i))) {
-                    answer.add(temp.get(j));
-                }
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        int pa = 0, pb = 0;
+        while(pa<n && pb<m){
+            if(arr1[pa] == arr2[pb]) {
+                answer.add(arr1[pa++]);
+                pb++;
             }
+            else if(arr1[pa] < arr2[pb]) pa++;
+            else pb++;
         }
-        Collections.sort(answer);
         return answer;
     }
     public static void main(String[] args) {
