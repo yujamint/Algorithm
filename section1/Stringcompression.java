@@ -1,4 +1,4 @@
-package section1;
+package string;
 
 import java.util.Scanner;
 //강의에서는 str의 마지막에 " "을 넣어서 for문에서 i번째와 i+1번쨰를 비교하면서 cnt 처리함

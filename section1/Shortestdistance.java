@@ -1,4 +1,4 @@
-package section1;
+package string;
 
 import java.util.Scanner;
 //문제 접근 방식부터 달랐던 거 같다.

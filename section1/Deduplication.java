@@ -1,4 +1,4 @@
-package section1;
+package string;
 
 import java.util.Scanner;
 //문자열 포함 여부 검사

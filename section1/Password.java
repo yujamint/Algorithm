@@ -1,4 +1,4 @@
-package section1;
+package string;
 //String의 replace 함수 이어붙여서 쓸 수 있다. str.replace('','').replace('',''); 이런 식으로
 import java.util.Scanner;
 //1. 문자열 replaceAll 통해 이진수 형태로 만들기

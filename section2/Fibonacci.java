@@ -1,4 +1,4 @@
-package section2;
+package array;
 //배열 사용하지 않고 a,b,c로 옮겨가면서도 가능
 
 import java.util.Scanner;

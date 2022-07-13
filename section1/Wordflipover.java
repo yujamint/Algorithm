@@ -1,4 +1,4 @@
-package section1;
+package string;
 
 import java.util.Scanner;
 //공부할 것 : StringBuilder, StringBuffer

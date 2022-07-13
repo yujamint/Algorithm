@@ -1,4 +1,4 @@
-package section1;
+package string;
 
 import java.util.Scanner;
 //ASCII TABLE48~57 -> 숫자 0~9 이용해서 할 수도 있다.

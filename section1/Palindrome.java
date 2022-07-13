@@ -1,4 +1,4 @@
-package section1;
+package string;
 
 import java.util.Locale;
 import java.util.Scanner;

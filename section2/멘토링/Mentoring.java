@@ -1,4 +1,4 @@
-package section2.멘토링;
+package array.멘토링;
 
 import java.util.Scanner;
 
