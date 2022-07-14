@@ -8,9 +8,9 @@ public class Main {
         String answer = "NO";
         Stack<Character> stack = new Stack<Character>();
         for(char x : s.toCharArray()){
-            if(x=='(') stack.push(x);
-            else {
-                if (stack.isEmpty()) return "NO";
+            if(x=='(') stack.push(x); // 열린 괄호를 만났을 때
+            else { // 닫힌 괄호를 만났을 떄
+                if (stack.isEmpty()) return "NO"; // 열린 괄호가 없다 -> 닫힌 괄호랑 쌍을 이룰 열린 괄호가 없다.
                 else stack.pop();
             }
         }

@@ -7,10 +7,10 @@ public class Main {
     static int sum = 0, max = Integer.MIN_VALUE;
     static int c,n;
     public void DFS(int L, int sum, int[] arr){
-        max = Math.max(sum,max);
-        if(L == n) return;
+        if(sum > c) return;
+        if(L == n) max = Math.max(sum,max);
         else {
-            if (sum + arr[L] <= c)DFS(L+1, sum+arr[L], arr);
+            DFS(L+1, sum+arr[L], arr);
             DFS(L+1, sum, arr);
         }
     }

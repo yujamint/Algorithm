@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public int[] solution(int n, int[] arr){
         int index=0;
-        for(int i=0; i<n; i++){
+        for(int i=0; i<n-1; i++){
             int min = Integer.MAX_VALUE;
             for(int j=i; j<n; j++){
                 if(arr[j] < min) {
